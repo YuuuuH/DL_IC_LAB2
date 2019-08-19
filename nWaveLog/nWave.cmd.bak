@@ -1,0 +1,46 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/home/yuhong/2019 summer/files/LAB2/src/cs.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/test"
+wvGetSignalSetScope -win $_nWave1 "/test/top"
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/top/clk} \
+{/test/top/reset} \
+{/test/top/X\[7:0\]} \
+{/test/top/Y\[9:0\]} \
+{/test/top/layer4\[7:0\]} \
+{/test/top/layer3\[0:1\]} \
+{/test/top/layer2\[0:3\]} \
+{/test/top/layer1\[0:8\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvGetSignalClose -win $_nWave1
+wvResizeWindow -win $_nWave1 2903 -10 927 1172
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wwvExit
+sor -win $_nWave1 11169.119575 -snap {("G1" 7)}
+wvResizeWindow -win $_nWave1 2903 -10 927 1172
+wvSetCursor -win $_nWave1 14675.489267 -snap {("G1" 7)}
+wvSetCursor -win $_nWave1 11316.919584 -snap {("G1" 7)}
+wvSetCursor -win $_nWave1 19056.232332 -snap {("G1" 7)}
+wvSetCursor -win $_nWave1 22195.764862 -snap {("G1" 7)}
+wvSetCursor -win $_nWave1 23583.000166 -snap {("G1" 7)}
+wvSetCursor -win $_nWave1 25846.384083 -snap {("G1" 7)}
+wvSetCursor -win $_nWave1 41047.562518 -snap {("G1" 7)}
+wvSetCursor -win $_nWave1 36885.856606 -snap {("G1" 6)}
+wvExit
