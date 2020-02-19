@@ -1,5 +1,5 @@
 ncverilog(64): 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
-TOOL:	ncverilog	14.10-s005: Started on Aug 19, 2019 at 10:41:13 CST
+TOOL:	ncverilog	14.10-s005: Started on Nov 11, 2019 at 22:42:57 CST
 ncverilog
 	-f pre.f
 		CS.v
@@ -8,8 +8,8 @@ ncverilog
 		+nc64bit
 		+access+r
 Recompiling... reason: file './CS.v' is newer than expected.
-	expected: Mon Aug 19 10:40:36 2019
-	actual:   Mon Aug 19 10:41:12 2019
+	expected: Wed Oct 16 12:21:08 2019
+	actual:   Mon Nov 11 22:42:34 2019
 file: CS.v
 	module worklib.CS:v
 		errors: 0, warnings: 0
@@ -17,7 +17,7 @@ file: CS.v
 	Elaborating the design hierarchy:
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.CS:v <0x0b15124f>
+		worklib.CS:v <0x77ec709a>
 			streams:  36, words: 25986
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
@@ -61,4 +61,4 @@ All data have been generated successfully!
 Simulation complete via $finish(1) at time 75350400 PS + 0
 ./testfixture.v:123       $finish;
 ncsim> exit
-TOOL:	ncverilog	14.10-s005: Exiting on Aug 19, 2019 at 10:41:15 CST  (total: 00:00:02)
+TOOL:	ncverilog	14.10-s005: Exiting on Nov 11, 2019 at 22:42:59 CST  (total: 00:00:02)

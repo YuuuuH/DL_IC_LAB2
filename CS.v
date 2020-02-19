@@ -56,17 +56,7 @@ end
 
 always @ (*)begin
     avg20=accum*d;
-   /* if((avg20[7:0]&one)==1)begin
-        avg = avg20[19:8]+1'b1;
-    end
-    else begin
-        avg = avg20[19:8];
-    end*/
-
-    
     avg = avg20[32:21];
-    //avg  = accum/9;    
-
 end
 
 always @(*)begin
